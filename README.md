@@ -1,10 +1,10 @@
 # HarvardX-PH125.9x-Final Submission - RKA
 Repository for final CYO project submission
 
-This repository includes the final (Choose Your Own) project submission files including final .Rmd Markdwon Report and Report pdf files, final Algorithm and Analysis R script code, and project data set .csv files.
-
-The included .csv files must be downloaded and copied to the local working directory for access by the Rmd Report and R script programs. Guidance for determining and verifying the local working directory is given in the R script code.
+This repository contains the final (Choose Your Own) project submission files for the HarvardX-PH125.9x Data Science: Capstone. The repository includes five (5) files: the .Rmd Markdwon Final Report, the pdf Final Report, the Final Algorithm and Analysis R script, and two project data set .csv files.
 
 Note: There are two (2) included .csv files both of which must dowloaded.
+
+The .csv data set files must be downloaded and copied to the local working directory for direct automatic access by the .Rmd and .R script programs. Guidance for determining and verifying the local working directory is given in the R script code.
 
 Thank you.
