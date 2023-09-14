@@ -7,6 +7,6 @@ This repository contains the final (Choose Your Own) Project 2 submission files 
 
 Note: There are two (2) included .csv files both of which must dowloaded.
 
-The .csv data set files must be downloaded and copied to the local working directory for direct automatic access by the .Rmd and .R script programs. Guidance for determining and verifying the local working directory is given in the R script code.
+The .csv data set files must be downloaded and copied to the local working directory for direct automatic access by the .Rmd and .R script programs. Guidance for determining and verifying the local working directory is given in the R script code. The files were intended to be uploaded to EDX submission window.
 
 Thank you.
