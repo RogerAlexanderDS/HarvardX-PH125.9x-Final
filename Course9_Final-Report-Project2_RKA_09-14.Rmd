@@ -1314,6 +1314,7 @@ dni_best_fct_df %>%
   facet_wrap(~Calendar_Month) +
   ggtitle(paste0(best_model,"-model *Forecast* Daily Direct Normal Irradiance (DNI) Variation"), fs_year1) + 
   theme(plot.title = element_text(size = 12, face = "bold")) +
+  coord_cartesian(ylim = c(0, 1200)) +
   labs(x = "Hour", y = "DNI (w/m2) - Monthly Average")
 
 # The forecast data plots can be compared with the plots of the actual data for the same year (fs_year1) as shown:
@@ -1336,13 +1337,14 @@ solar_dataset %>%
   facet_wrap(~Calendar_Month) +
   ggtitle("*Actual* Daily Direct Normal Irradiance (DNI) Variation", fs_year1) + 
   theme(plot.title = element_text(size = 12, face = "bold")) +
+  coord_cartesian(ylim = c(0, 1200)) +
   labs(x = "Hour", y = "DNI (w/m2) - Monthly Average")
 
 ```
 
-Differences in both the peaks and the daily duration of positive DNI values can be observed between the cubist model forecast and the actual data measurements over the course of the year. Forecast peak (monthly-averaged) Daily DNI forecasts for December, for example, are between 625 and 725 w/m2 whereas the actual measurements are in the range of 500 to 650 w/m2.
+For 2019, some differences in both the peaks and the daily duration of positive DNI values can be observed between the ranger model forecast and the actual data measurements over the course of the year though the general correspondence is good. Forecast peak (monthly-averaged) Daily DNI forecasts for December, for example, are approximately 625 w/m2 corresponding to the actual measurements in a similar range.
 
-Nonetheless, overall the monthly-averaged daily DNI variation over the course of the year is however still a close correspondence with what we would expect given the mean absolute daily percentage error (MADPE) values obtained. Therefore, beyond the singular average daily percentage error measure for the DNI values, the time series forecast provide a reasonably accurate representation of the actual data.
+Overall the monthly-averaged daily DNI variation over the course of the year is a close correspondence with what would be expected given the mean absolute daily percentage error (MADPE) values obtained. Therefore, beyond the singular average daily percentage error measure for the DNI values, the time series forecast provide a reasonably accurate representation of the actual data.
 
 ```{r reviewing best model data - forecast year 2, include=TRUE}
 
@@ -1361,6 +1363,7 @@ dni_best_fct_df %>%
   facet_wrap(~Calendar_Month) +
   ggtitle(paste0(best_model,"-model *Forecast* Daily Direct Normal Irradiance (DNI) Variation"), fs_year2) + 
   theme(plot.title = element_text(size = 12, face = "bold")) +
+  coord_cartesian(ylim = c(0, 1000)) +
   labs(x = "Hour", y = "DNI (w/m2) - Monthly Average")
 
 # The forecast data plots can be compared with the plots of the actual data for the same year (fs_year2) as shown:
@@ -1383,11 +1386,12 @@ solar_dataset %>%
   facet_wrap(~Calendar_Month) +
   ggtitle("*Actual* Daily Direct Normal Irradiance (DNI) Variation", fs_year2) + 
   theme(plot.title = element_text(size = 12, face = "bold")) +
+  coord_cartesian(ylim = c(0, 1000)) +
   labs(x = "Hour", y = "DNI (w/m2) - Monthly Average")
 
 ```
 
-Consistent with the derived RMSE and MADPE, which covered the entire forecast duration, the comparison of the DNI data forecasts for year 2 of the forecast period with that of the actual measurements again show good correspondence. There is also not an appreciably falloff in the forecast at two years into the future.
+Consistent with the derived RMSE and MADPE, which covered the entire forecast duration, the comparison of the DNI data forecasts for year 2 (2020) of the forecast period with that of the actual measurements again show good correspondence. There is also not an appreciably falloff in the forecast at two years into the future.
 <br/>
 <br/>
 
